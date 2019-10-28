@@ -136,13 +136,13 @@ class ContactsViewController: UIViewController,UITableViewDelegate,UITableViewDa
                         self.errorView?.removeFromSuperview()
                     }
                     self.contactsTableView.reloadData()
-                    self.hideLoaderView()
                 }
             }
             else
             {
                 self.showErrorView()
             }
+            self.hideLoaderView()
         }
     }
     
